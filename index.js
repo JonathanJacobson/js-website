@@ -1,1 +1,1 @@
-console.log();
+console.log("I love golf");
