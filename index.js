@@ -16,10 +16,18 @@ document.getElementById("p1").innerHTML = "Hello, " + yourName;
 document.getElementById("p2").innerHTML = "You are, " + age;
 document.getElementById("p3").innerHTML = "Hello, " + x;
 */
-
 let username;
+
+var age;
 
 document.getElementById("myButton").onclick = function() {
     username = document.getElementById("myText").value;
     document.getElementById("myLabel").innerHTML = "Hello " + username;
+    age = document.getElementById("myAge").value;
+    console.log(typeof age);
+    age = Number(age);
+    console.log(typeof age);
+    age += 1;
+    document.getElementById("myAgeLabel").innerHTML = "Happy Birthday, you are " + age + " years old!";
+    
 }
