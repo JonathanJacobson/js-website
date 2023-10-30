@@ -20,6 +20,8 @@ let username;
 
 var age;
 
+let x, y;
+
 document.getElementById("myButton").onclick = function() {
     username = document.getElementById("myText").value;
     document.getElementById("myLabel").innerHTML = "Hello " + username;
@@ -29,5 +31,8 @@ document.getElementById("myButton").onclick = function() {
     console.log(typeof age);
     age += 1;
     document.getElementById("myAgeLabel").innerHTML = "Happy Birthday, you are " + age + " years old!";
+
+    let x = Math.PI;
+    let y = Math.sqrt(16);
     
 }
