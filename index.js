@@ -63,7 +63,9 @@ document.getElementById("myButton").onclick = function() {
 
 document.getElementById("solveHypotenuseButton").onclick = function() {
     side1 = document.getElementById("side1").value;
+    side1 = Number(side1);
     side2 = document.getElementById("side2").value;
+    side2 = Number(side2);
     side3 = solveHypotenuse (side1, side2);
 
     document.getElementById("sideC").innerHTML = "Answer Side C " + side3;
