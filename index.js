@@ -74,15 +74,15 @@ document.getElementById("solveHypotenuseButton").onclick = function() {
 let count = 0;
 document.getElementById("decreaseButton").onclick = function() {
     count-=1;
-    document.getElementById("Num").innerHTML = "" + count;
+    document.getElementById("countLabel").innerHTML = "" + count;
 }
 document.getElementById("resetButton").onclick = function() {
     count = 0;
-    document.getElementById("Num").innerHTML = "" + count;
+    document.getElementById("countLabel").innerHTML = "" + count;
 }
 document.getElementById("increaseButton").onclick = function() {
     count+=1;
-    document.getElementById("Num").innerHTML = "" + count;
+    document.getElementById("countLabel").innerHTML = "" + count;
 }
 
 function myFunction (a, b)
