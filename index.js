@@ -103,6 +103,9 @@ document.getElementById("userButton").onclick = function() {
     userChar = user.charAt(1);
     userIndex = user.indexOf("o");
     userIndex = user.lastIndexOf("o");
+    user = user.trim();
+    user = user.toUpperCase();
+    user = user.toLowerCase();
 
     document.getElementById("userLabel1").innerHTML = "" + userLength;
     document.getElementById("userLabel2").innerHTML = "" + userChar;
