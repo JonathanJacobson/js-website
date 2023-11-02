@@ -101,7 +101,8 @@ document.getElementById("userButton").onclick = function() {
     userLength = user.length;
 
     userChar = user.charAt(1);
-    userIndex = user.indexOf(" ");
+    userIndex = user.indexOf("o");
+    userIndex = user.lastIndexOf("o");
 
     document.getElementById("userLabel1").innerHTML = "" + userLength;
     document.getElementById("userLabel2").innerHTML = "" + userChar;
