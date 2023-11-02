@@ -32,11 +32,17 @@ document.getElementById("myButton").onclick = function() {
     age += 1;
     //document.getElementById("myAgeLabel").innerHTML = "Happy Birthday, you are " + age + " years old!";
 
-    let x = Math.PI;
+    let x = 3.14;
+    //x = Math.round(x);
+    //x = Math.floor(x);
+    //x = Math.ceil(x)
+    x = Math.pow(x, 2);
     let y = Math.sqrt(16);
     bb = myFunction(3, 2)
     age = bb;
-    document.getElementById("myAgeLabel").innerHTML = "Happy Birthday, you are " + age + " years old!";
+    //document.getElementById("myAgeLabel").innerHTML = "Happy Birthday, you are " + age + " years old!";
+    document.getElementById("myAgeLabel").innerHTML = "The answer is " + x + " !";
+    
     
 }
 
