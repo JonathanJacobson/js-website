@@ -85,6 +85,16 @@ document.getElementById("increaseButton").onclick = function() {
     document.getElementById("countLabel").innerHTML = "" + count;
 }
 
+let l, m, n;
+document.getElementById("rollButton").onclick = function() {
+    l = Math.floor(Math.random() * 6) + 1;
+    document.getElementById("lLabel").innerHTML = "" + l;
+    m = Math.floor(Math.random() * 6) + 1;
+    document.getElementById("mLabel").innerHTML = "" + m;
+    n = Math.floor(Math.random() * 6) + 1;
+    document.getElementById("nLabel").innerHTML = "" + n;
+}
+
 function myFunction (a, b)
 {
     x = a * b;
