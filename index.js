@@ -32,16 +32,31 @@ document.getElementById("myButton").onclick = function() {
     age += 1;
     //document.getElementById("myAgeLabel").innerHTML = "Happy Birthday, you are " + age + " years old!";
 
-    let x = 3.14;
+    let x = -3.14;
+
+    let xa = -3.14;
+    let xb = -5;
+    let xc = 9;
+    let xd = 200;
+    let maximum;
+    let minimum;
+
+    x = Math.abs(x);
     //x = Math.round(x);
     //x = Math.floor(x);
     //x = Math.ceil(x)
-    x = Math.pow(x, 2);
+    //x = Math.pow(x, 2);
+    //x = Math.sqrt(x);
+
     let y = Math.sqrt(16);
     bb = myFunction(3, 2)
     age = bb;
+    maximum = Math.max(xa, xb, xc, xd);
+    minimum = Math.max(xa, xb, xc, xd);
     //document.getElementById("myAgeLabel").innerHTML = "Happy Birthday, you are " + age + " years old!";
-    document.getElementById("myAgeLabel").innerHTML = "The answer is " + x + " !";
+    //document.getElementById("myAgeLabel").innerHTML = "The answer is " + x + " !";
+    //document.getElementById("myAgeLabel").innerHTML = "The maximum answer is " + maximum + " !";
+    document.getElementById("myAgeLabel").innerHTML = "The minimum answer is " + minimum + " !";
     
     
 }
