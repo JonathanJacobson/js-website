@@ -47,6 +47,7 @@ document.getElementById("myButton").onclick = function() {
     //x = Math.ceil(x)
     //x = Math.pow(x, 2);
     //x = Math.sqrt(x);
+    x = Math.PI;
 
     let y = Math.sqrt(16);
     bb = myFunction(3, 2)
@@ -56,13 +57,26 @@ document.getElementById("myButton").onclick = function() {
     //document.getElementById("myAgeLabel").innerHTML = "Happy Birthday, you are " + age + " years old!";
     //document.getElementById("myAgeLabel").innerHTML = "The answer is " + x + " !";
     //document.getElementById("myAgeLabel").innerHTML = "The maximum answer is " + maximum + " !";
-    document.getElementById("myAgeLabel").innerHTML = "The minimum answer is " + minimum + " !";
-    
-    
+    //document.getElementById("myAgeLabel").innerHTML = "The minimum answer is " + minimum + " !";
+    document.getElementById("myAgeLabel").innerHTML = "PI is " + x + " !";
+}
+
+document.getElementById("solveHypotenuseButton").onclick = function() {
+    side1 = document.getElementById("side1").value;
+    side2 = document.getElementById("side2").value;
+    side3 = solveHypotenuse (side1, side2);
+
+    document.getElementById("sideC").innerHTML = "Answer Side C " + side3;
 }
 
 function myFunction (a, b)
 {
     x = a * b;
     return x;
+}
+
+function solveHypotenuse (a, b)
+{
+    c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+    return c;
 }
