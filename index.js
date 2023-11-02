@@ -96,10 +96,18 @@ document.getElementById("rollButton").onclick = function() {
 }
 
 let user = "Bro Code";
-let userLength;
+let userLength, userChar, userIndex;
 document.getElementById("userButton").onclick = function() {
     userLength = user.length;
-    document.getElementById("userLabel").innerHTML = "" + userLength;
+
+    userChar = user.charAt(1);
+    userIndex = user.indexOf(" ");
+
+    document.getElementById("userLabel1").innerHTML = "" + userLength;
+    document.getElementById("userLabel2").innerHTML = "" + userChar;
+    document.getElementById("userLabel3").innerHTML = "" + userIndex;
+
+
 }
 
 function myFunction (a, b)
