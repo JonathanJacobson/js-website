@@ -97,6 +97,8 @@ document.getElementById("rollButton").onclick = function() {
 
 let user = "Bro Code";
 let userLength, userChar, userIndex;
+let phoneNumber = "123-456-7890";
+
 document.getElementById("userButton").onclick = function() {
     userLength = user.length;
 
@@ -106,13 +108,14 @@ document.getElementById("userButton").onclick = function() {
     user = user.trim();
     user = user.toUpperCase();
     //user = user.toLowerCase();
+    phoneNumber = phoneNumber.replaceAll("-","/");
 
     document.getElementById("userLabel").innerHTML = "" + user;
     document.getElementById("userLabel1").innerHTML = "" + userLength;
     document.getElementById("userLabel2").innerHTML = "" + userChar;
     document.getElementById("userLabel3").innerHTML = "" + userIndex;
 
-
+    document.getElementById("userLabel4").innerHTML = "" + phoneNumber;
 }
 
 function myFunction (a, b)
