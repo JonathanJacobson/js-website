@@ -96,12 +96,13 @@ document.getElementById("rollButton").onclick = function() {
 }
 
 let user = "Bro Code";
+let fullName, firstName, lastName;
 let userLength, userChar, userIndex;
 let phoneNumber = "123-456-7890";
 
 document.getElementById("userButton").onclick = function() {
     userLength = user.length;
-
+    fullName = user; //"Bro Code"
     userChar = user.charAt(1);
     userIndex = user.indexOf("o");
     userIndex = user.lastIndexOf("o");
@@ -110,12 +111,19 @@ document.getElementById("userButton").onclick = function() {
     //user = user.toLowerCase();
     phoneNumber = phoneNumber.replaceAll("-","/");
 
+    firstName = fullName.slice(0, 3);
+    lastName = fullName.slice(4);
+
     document.getElementById("userLabel").innerHTML = "" + user;
     document.getElementById("userLabel1").innerHTML = "" + userLength;
     document.getElementById("userLabel2").innerHTML = "" + userChar;
     document.getElementById("userLabel3").innerHTML = "" + userIndex;
 
     document.getElementById("userLabel4").innerHTML = "" + phoneNumber;
+
+    document.getElementById("firstName").innerHTML = "" + firstName;
+    document.getElementById("lastName").innerHTML = "" + lastName;
+
 }
 
 function myFunction (a, b)
