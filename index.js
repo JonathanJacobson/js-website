@@ -111,8 +111,12 @@ document.getElementById("userButton").onclick = function() {
     //user = user.toLowerCase();
     phoneNumber = phoneNumber.replaceAll("-","/");
 
-    firstName = fullName.slice(0, 3);
-    lastName = fullName.slice(4);
+    //firstName = fullName.slice(0, 3);
+    //lastName = fullName.slice(4);
+
+    fullName = "Snoop Dogg";
+    firstName = fullName.slice(0, fullName.indexOf(" "));
+    lastName = fullName.slice(fullName.indexOf(" ") + 1);
 
     document.getElementById("userLabel").innerHTML = "" + user;
     document.getElementById("userLabel1").innerHTML = "" + userLength;
