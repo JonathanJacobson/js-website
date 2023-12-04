@@ -28,6 +28,7 @@ document.getElementById("myButton").onclick = function() {
     age = document.getElementById("myAge").value;
     console.log(typeof age);
     age = Number(age);
+    //Jonathan 04/12/2023
     console.log(typeof age);
     age += 1;
     //document.getElementById("myAgeLabel").innerHTML = "Happy Birthday, you are " + age + " years old!";
